@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: whitesmoke;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.icons-grid img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.icon-label {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#question-panel {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#question-panel.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
+
+#question {
+    margin: 0;
+}
+
+#attempts {
+    margin-top: 5px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#dark-mode-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+    color: inherit;
+}
+
+.info-panel {
+    background-color: rgba(190, 0, 0, 0.473);
+    position: fixed;
+    right: 950px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.541);
+    border-radius: 10px;
+    z-index: 100;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.info-panel.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
+
+.side-panel {
+    background-color: rgba(32, 190, 0, 0.473);
+    position: fixed;
+    right: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 0 50px rgba(43, 255, 0, 0.541);
+    border-radius: 10px;
+    z-index: 100;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.side-panel.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
+
+.icon-language {
+    font-size: 20px;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    opacity: 0.92;
+}
+
+.icon-info {
+    font-size: 20px;
+    opacity: 0.92;
+}
+
+.flag-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.flag-container img {
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.country-name {
+    margin: 0;
+}

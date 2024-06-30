@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysterious Questions</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Ionicons için scriptler -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="icons-grid" id="icons-grid">
+            <!-- İlk sorunun simgeleri burada yüklenecek -->
+        </div>
+    </div>
+    <div id="question-panel">
+        <p id="question">Sometimes fear, sometimes happy. Sometimes war, sometimes peace.</p> <!-- Güncellenmiş İngilizce soru burada -->
+        <p id="attempts">Attempts Left: 3</p> <!-- Güncellenmiş İngilizce haklar gösterimi -->
+        <ion-icon name="moon" id="dark-mode-toggle"></ion-icon>
+    </div>
+    <div class="info-panel" id="info-panel">
+        <ion-icon name="information-circle" class="icon-info"></ion-icon>
+        <p class="info">Welcome to Our WebSite!</p>
+        <p class="info"></p>
+        <p class="info"></p>
+        <p class="info"></p>
+        <p class="info"></p>
+        <p class="info"></p>
+        <p class="info"></p>
+        <p class="info"></p>
+        <p class="info"></p>
+    </div>
+    <div class="side-panel" id="side-panel">
+        <ion-icon name="language" class="icon-language"></ion-icon>
+        <div class="flag-container" id="english-flag">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/640px-Flag_of_the_United_Kingdom_%281-2%29.svg.png" alt="England Flag">
+            <p class="country-name">England</p>
+        </div>
+        <div class="flag-container" id="russian-flag">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSBSsV2up86rvStJSG-tDxoYiHfyl-1DVY5A&s" alt="Russia Flag">
+            <p class="country-name">Russia</p>
+        </div>
+        <div class="flag-container" id="turkish-flag">
+            <img src="https://cdn.britannica.com/82/4782-050-8129909C/Flag-Turkey.jpg" alt="Turkey Flag">
+            <p class="country-name">Turkey</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
